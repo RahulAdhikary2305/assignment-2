@@ -59,6 +59,107 @@
 }
 
 
+/* Banner section */
+
+
+.circle{
+
+    position: relative;
+    top: -150px;
+    
+    width: 500px;
+    height: 500px;
+    background-image: url(./assets/hero-circle.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+}
+
+
+.outer{
+    height: 100vh;
+    background-image: url(./assets/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 3;
+
+}
+
+
+
+.inner{
+
+    position: relative;
+    top: -10px;
+    right: -30px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+.bantext{
+    background-color: #1A0B2E;
+
+}
+.btm{
+    max-width: 550px;
+    color: #FFFFFF;
+    margin: 0 auto;
+
+
+}
+
+.btmp{
+    font-size: 60px ;
+    font-weight: bolder ;
+    text-align: center;
+
+}
+.btmd{
+    font-size: 16px ;
+    text-align: center;
+
+}
+.btmbtn{
+    text-align: center;
+}
+
+.bbtn1{
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(to left,yellow,pink,purple) ;
+    width: 200px;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+.bbtn2{
+    font-size: 1rem;
+    font-weight: 600;
+    width: 140px;
+    gap: 8px;
+    padding: 12px 20px;
+    color: #00FF88;
+    background-color: transparent;
+    border-radius: 20px;
+
+
+
+}
+
 
 /* About section */
 
@@ -200,7 +301,99 @@
 
 
 
+/* Featured section */
 
+.featured{
+    background-color: #1A0B2E;
+}
+    
+
+
+.ftrytc{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    padding: 120px 240px;
+
+}
+
+.ft{
+    max-width: 1200px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.ytcti{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+.ytcdes{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+.ftrht{
+    max-width: 1200px;
+    padding: 0 auto;
+    margin: 0 auto;
+    padding: 40px 40px;
+
+}
+
+
+.ftrhtb{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 40px;
+    background-color: #351165;
+
+}
+
+.ytcdur{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #00FF88;
+
+}
+
+.fh3{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+.fp{
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.ful{
+    max-width: 14rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+
+.fulimg{
+    max-width: 40px;
+    max-height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
 
 
 
@@ -230,11 +423,62 @@
     }
 
 
+    /* Banner section */
+
+    .circle{
+
+        position: relative;
+        top: -50px;
+        
+        width: 170px;
+        height: 170px;
+        background-image: url(./assets/hero-circle.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 2;
+    }
+
+
+    .outer{
+        height: 100vh;
+        position: relative;
+        
+        width: 800px;
+        height: 400px;
+        background-image: url(./assets/hero-bg.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 3;
+
+    }
+
+
+
+    .inner{
+        size-adjust: inherit(30%); 
+
+        
+        
+       
+    }
+
+
+
 /* About section */
 
     .aboutdn{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    text-align: center;
     }
 
 
@@ -259,6 +503,47 @@
         
         
     }
+
+    /* Featured section  */
+
+
+
+
+    .featured{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    
+
+    .ftrytc{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    
+
+    }   
+
+    .htbimg, .ftrhtdes, .ful{
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .ftrht, .ftrhtb{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    
+
+
+
+
+
+    
 
 
     
