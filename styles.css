@@ -60,6 +60,141 @@
 
 
 
+/* About section */
+
+.about{
+    padding-bottom: 120px;
+    background-color: #1A0B2E;
+
+
+}
+
+.aboutm{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.aboutup{
+    text-align: center;
+    padding: 50px 200px 150px;
+}
+
+.aboutuph{
+    /* max-width: 1200px; */
+    font-size: 48px;
+    font-weight: bold;
+    padding: 0 auto;
+    color: #FFFFFF;
+
+}
+
+
+.aboutupd{
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.aboutdn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.aboutdndh3{
+    color: #00FF88;
+    font-size: 48px;
+    max-width: 240px;
+    
+    
+}
+
+.aboutdndp{
+    color: #FFFFFF;
+    font-size: 16px;
+    max-width: 240px;
+
+}
+
+/* WSC section */
+
+.wcs{
+    background-color: #230E3D;
+    padding-bottom: 120px;
+}
+
+
+
+  
+.wcsmt{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 120px 200px;
+    color:#FFFFFF;
+}
+
+
+
+.wcsmc1{
+    grid-area: a1;
+}
+.wcsmc2{
+    grid-area: a2;
+}
+.wcsmc3{
+    grid-area: a3;
+}
+.wcsmc4{
+    grid-area: a4;
+}
+.wcsmc5{
+    grid-area: a5;
+}
+
+.wscmc{
+    max-width: 1200px;
+    
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    grid-template-columns: repeat(3,1fr);
+    
+
+    grid-template-areas: 
+    "a1 a2 a2"
+    "a1 a3 a3"
+    "a4 a4 a5"
+    ;
+}
+
+
+.wcsmc1, .wcsmc2, .wcsmc3, .wcsmc4, .wcsmc5{
+    border: solid 2px none;
+    background-color: #351165;
+    margin: 10px;
+    border-radius: 40px;
+    padding: 40px;
+}
+.wcsimg{
+    max-height: 60px;
+    max-width: 60px;
+}
+
+.wcsh4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.wcsp{
+    font-size: 1rem;
+    color: #FFFFFF;
+    opacity: 70%;
+}
 
 
 
@@ -67,7 +202,14 @@
 
 
 
-@media screen and (max-width:576px) {
+
+
+
+@media screen and (max-width:800px) {
+
+
+/* Navbar section */
+
 
     .navul, .navbtn{
         display: none;
@@ -84,6 +226,38 @@
         background: none;
         max-width: 24px;
         max-height: 24px;
+        
+    }
+
+
+/* About section */
+
+    .aboutdn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    }
+
+
+/* WSC section */
+
+    .wcs{
+        padding: 20px;
+    }
+
+    .wcsm{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .wscmc{
+        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+
+        
+        
     }
 
 
